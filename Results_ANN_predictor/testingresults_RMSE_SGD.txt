@@ -1,8 +1,0 @@
-Testing results
-
-Loss and optimizer used: RMSE, SGD
-
-testing:  R^2: 0.989938852980487, loss: 0.05307651211729816
-
-Abbreviations:
-R^2: Coefficient of determination(Accuracy)

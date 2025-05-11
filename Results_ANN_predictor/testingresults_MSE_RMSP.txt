@@ -1,8 +1,0 @@
-Testing results
-
-Loss and optimizer used: MSE, RMSP
-
-testing:  R^2: 0.992609934474351, loss: 0.007390065525649045
-
-Abbreviations:
-R^2: Coefficient of determination(Accuracy)
