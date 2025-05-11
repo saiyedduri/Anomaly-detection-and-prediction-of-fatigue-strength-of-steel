@@ -11,7 +11,7 @@ The fallowing command will create all the results present in this directory
 - python .\PPP_CMatrix_main.py
 
 The results generated with other dataset can be found in the directory 'Results_OtherDatasets'
-Create results by executing - python .\PPP_CMatrix_main.py --data dataset.csv  (dataset.csv: fatigue_Selecteddataset.csv)
+Create results by executing - python ./CMatrix_main.py --data dataset.csv  (dataset.csv: fatigue_Selecteddataset.csv)
 Refer Manual for how to generate results for different cases
 ----------------------------------------------------------------------------------------------------
 
