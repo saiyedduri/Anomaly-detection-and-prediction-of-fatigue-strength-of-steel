@@ -1,0 +1,8 @@
+Testing results
+
+Loss and optimizer used: MSE, Adam
+
+testing:  R^2: 0.9806266602116085, loss: 0.02157731142407571
+
+Abbreviations:
+R^2: Coefficient of determination(Accuracy)

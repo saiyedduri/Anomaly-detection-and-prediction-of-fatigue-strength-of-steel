@@ -1,0 +1,8 @@
+Testing results
+
+Loss and optimizer used: RMSE, Adam
+
+testing:  R^2: 0.9746941080512016, loss: 0.11437972310397305
+
+Abbreviations:
+R^2: Coefficient of determination(Accuracy)
