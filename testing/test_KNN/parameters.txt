@@ -1,0 +1,72 @@
+========================================================================
+# This README.txt file is a part of personal programming project -> test_KNN
+# Test_file: test_KNN_Prediction.py
+# Test_type: Unit test
+# Parameters: Independent feature, dependent feature, expected results and nearest neighbors 
+========================================================================
+independentFeature(arange(start,stop,1))  dependentFeature(arange(start,stop,1))  expected(prediction results)  nearest neighbors 
+------------------------------------------------------------------------
+1,7  	7,13   9.5,9.5      2
+1,7  	1,7   3.5,3.5      2
+1,7  	1,7   3,3      3
+11,20  1,10   6,6      3
+2,16  3,17   11.5,11.5,11.5      4
+
+
+Rearranging the input set for clear visualization
+------------------------------------------------------------------------
+1,7  	 7,13   9.5,9.5            2
+1,7  	 1,7    3.5,3.5            2              ------------------------ parameters Case 2
+1,7  	 1,7    3,3                3
+11,20  1,10   6,6                3
+2,16   3,17   11.5,11.5,11.5     4
+
+
+Sample computation of Expected result
+--------------------------------------
+Dataset used: parameters Case 2 
+
+independentFeature(X) = 1,7  	         ------(1)
+dependentFeature(y)   = 1,7            ------(2)    
+nearest neighbors(k)  = 2              ------(3)
+expected results(y_pred) = 3.5,3.5     ------(4)
+
+Step-1: Creating dataset based on input (1) and (2)
+ 
+X = range(1,7) = [1,2,3,4,5,6]
+y = range(1,7) = [1,2,3,4,5,6]
+
+Step-2: Splitting dataset X and y into training set(80% of data) and test set(20% of data)
+
+X_train = 80% of X = [1,2,3,4]
+X_test  = 20% of X = [5,6]
+y_train = 80% of y = [1,2,3,4]
+y_test  = 20% of y = [5,6]
+
+Step-3: Predict results using kNN algorithm
+
+# Calculate the distance between each sample of X_test with all samples of X_train
+First sample of X_test = 5
+eucledian_distance = [sqrt(5-1)**2,sqrt(5-2)**2,sqrt(5-3)**2,sqrt(5-4)**2]  = [4,3,2,1]
+                   
+# Sort from min value to max w.r.t its 'index'
+sorted_distance = [3,2,1,0]
+
+# Select first k value w.r.t input (3)
+k = 2
+selected_distance = [3,2]
+
+# Get the values of y_train w.r.t the computed index and find neighbors
+neighbors = values of y_train at index [3,2] = [4,3]
+
+# Compute the mean of neighbors and find predict results
+y_pred = mean of [4,3] = (4 + 3)/2 = 3.5             ----------(5)
+
+#  Repeat the same computation for Second sample of X_test = 6
+eucledian_distance = [5,4,3,2]
+sorted_distance    = [3,2,1,0]
+selected_distance  = [3,2]
+neighbors          = [4,3]
+y_pred             = 3.5                            ------------(6)
+
+Results check: [(5),(6)] matches (4) expected result obtained

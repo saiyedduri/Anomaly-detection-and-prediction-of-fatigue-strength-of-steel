@@ -1,0 +1,13 @@
+========================================================================
+# This README.txt file is a part of personal programming project -> test_MLR
+# Test_file: test_CompleteMLR.py
+# Test_type: Gradient checking & Unit test
+# Parameters: Input set, dependent feature and expected results for five data samples 
+========================================================================
+inputset  dependentFeature  expected(forward propagation results) 
+------------------------------------------------------------------------
+1,2,3,4,5  16.98694  16
+6,5,4,3,2  21.98694  21
+7,4,1,8,9  30.99751  30
+9,8,6,7,4  35.97742  35
+10,1,5,2,3  22.94578  22

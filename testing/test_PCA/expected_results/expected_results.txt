@@ -1,0 +1,13 @@
+Expected results of PCA for all features:
+
+Features   loading_vector1   loading_vector2  Variance(%)  
+
+Oil        0.4575334         0.3704389        60.624263
+Density   -0.4787455        -0.3567500        25.914115
+Crispy     0.5323877        -0.1976610	    6.200987
+Fracture  -0.5044769         0.2212399	    4.838402
+Hardness   0.1534026        -0.8046661        2.422233
+
+Reference: (For all results and plots in the directory: expected_results) 
+Hartmann, K., Krois, J., Waske, B. (2018): E-Learning Project SOGA: Statistics and Geospatial Data Analysis. 
+Department of Earth Sciences, Freie Universitaet Berlin.
