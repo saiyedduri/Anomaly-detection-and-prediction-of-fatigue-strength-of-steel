@@ -1,0 +1,13 @@
+Time taken in create overall results
+
+Time taken by each code to execute:
+
++----------------+-----------+
+| Combinations   |   Time(s) |
++================+===========+
+| MSE_SGD        |  0.799738 |
++----------------+-----------+
+| RMSE_SGD       |  0.773546 |
++----------------+-----------+
+
+Time taken by two combination to execute: 1.5732884
