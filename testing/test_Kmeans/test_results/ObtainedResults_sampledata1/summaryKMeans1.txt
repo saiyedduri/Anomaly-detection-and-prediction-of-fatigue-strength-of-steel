@@ -1,0 +1,24 @@
+K-means Cluster Analysis:
+
+Number of clusters: 5
+Dataset: Principal Components 1 and 2
+
+Observation: Total number of observation for each cluster
+Avg_Dist: Average distance from centroid
+Max_Dist: Maximum distance from centroid
+
++------------+---------------+------------+------------+
+| Clusters   |   Observation |   Avg_Dist |   Max_Dist |
++============+===============+============+============+
+| cluster1   |            23 |   0.54915  |   0.824142 |
++------------+---------------+------------+------------+
+| cluster2   |            35 |   0.624569 |   1.86299  |
++------------+---------------+------------+------------+
+| cluster3   |            22 |   0.447165 |   0.804399 |
++------------+---------------+------------+------------+
+| cluster4   |            81 |   0.386622 |   0.877181 |
++------------+---------------+------------+------------+
+| cluster5   |            39 |   0.627408 |   1.92639  |
++------------+---------------+------------+------------+
+
+Time taken by KMeans to execute(seconds): 1.032155

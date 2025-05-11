@@ -1,0 +1,44 @@
+========================================================================
+# This parameters.txt file is a part of personal programming project -> test_ANN
+# Test_file: test_ANN_Functions.py
+# Test_type: Unit test
+# Parameters: Each function has two set of parameters as mentioned below
+========================================================================
+# Parameters for ReLU activation function. Dataset: Two data samples with each sample having five neurons
+inputset     expected
+------------------------------------------------------------------------
+0,1,2,7,9  0,1,2,7,9
+-1,0,2,4,-5  0,0,2,4,0
+
+# Parameters for Linear activation function. Dataset: Two data samples with each sample having five neurons
+inputset     expected
+------------------------------------------------------------------------
+0,1,2,7,9  0,1,2,7,9
+-1,0,2,4,-5  -1,0,2,4,-5
+
+# Parameters for MSE loss function. Dataset: Two input sets; Each input set have three data samples and each sample have three neurons
+inputset1  inputset2  prediction(inputset.shape)  expected (3rd row 3rd and 4th col has no entry thus = 0)
+------------------------------------------------------------------------
+1,1,1  2,2,2  3,3  0,1,4
+2,2,2  4,4,4  3,3  1,9,0
+3,3,3  1,1,1  0,0  0
+
+# Parameters for RMSE loss function. Dataset: Two input sets; Each input set have three data samples and each sample have three neurons
+inputset1  inputset2  prediction(inputset.shape)  expected (3rd row 3rd and 4th col has no entry thus = 0)
+------------------------------------------------------------------------
+1,1,1  2,2,2  3,3  0,1,2
+2,2,2  4,4,4  3,3  1,3,0
+3,3,3  1,1,1  0,0  0
+
+# Parameters for Regularization loss function. Dataset: Two data samples with each sample having five neurons
+inputset  dependentFeature  expected(loss)  expected(Regloss)
+------------------------------------------------------------------------
+1,2,3,4,5  148.98694  0.974050563  6.2e-5
+6,5,4,3,2  193.98694  0.974050563  6.2e-5
+
+# Parameters for Coefficient of determination. Dataset: Two input sets; Each input set have three data samples and each sample have three neurons
+inputset1  inputset2  prediction1  prediction2  expected (3rd row 5th col has no entry thus = 0)
+------------------------------------------------------------------------
+1,1,1  2,4,5  1,1,1  2.1,4.2,4.9  1
+2,2,2  7,1,4  2,2,2  6.9,1.1,3.97  0.9977421
+3,3,3  2,3,8  3,3,3  1.9,3.07,7.99  0

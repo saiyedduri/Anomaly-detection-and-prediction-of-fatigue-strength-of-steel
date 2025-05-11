@@ -1,0 +1,14 @@
+========================================================================
+# This README.txt file is a part of personal programming project -> test_ANN
+# Test_file: test_CompleteANN_SGDMomentum_optimizer.py
+# Test_type: Gradient checking
+# Parameters: Input set and dependent feature to be used 
+========================================================================
+# Dataset: Five data samples with each sample having five neurons
+inputset  dependentFeature  
+------------------------------------------------------------------------
+1,2,3,4,5  148.98694
+6,5,4,3,2  193.98694
+7,4,1,8,9  274.99751
+9,8,6,7,4  319.97742
+10,1,5,2,3  202.94578

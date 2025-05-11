@@ -1,0 +1,14 @@
+========================================================================
+# This parameters.txt file is a part of personal programming project -> test_ANN
+# Test_file: test_ANN_Forward_prop.py
+# Test_type: Unit test
+# Parameters: Input set and expected results
+========================================================================
+# Dataset: Five data samples with each sample having five neurons
+inputset  expected
+------------------------------------------------------------------------
+1,2,3,4,5  148
+6,5,4,3,2  193
+7,4,1,8,9  274
+9,8,6,7,4  319
+10,1,5,2,3  202
